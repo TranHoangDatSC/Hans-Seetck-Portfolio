@@ -77,7 +77,7 @@ Dự án Portfolio tuân thủ tư duy **Environment Separation**:
 # 1. Cấu hình thông số API tại assets/js/config.js (dựa trên file template)
 # 2. Khởi chạy môi trường Docker
 docker-compose up -d
-
+```
 ## 🎯 Lộ trình phát triển (Career Roadmap)
 
 * **Giai đoạn Foundation (2024 - 2027):** Hoàn thành cử nhân SE, chinh phục chứng chỉ Google Cloud Professional.
