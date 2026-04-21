@@ -1,0 +1,5 @@
+.gitignore
+node_modules
+.vscode
+# Quan trọng: Không cho file config thật vào image vì tôi định đẩy image lên Docker Hub
+assets/js/config.js

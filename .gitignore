@@ -1,5 +1,8 @@
-# Security
+# Security (Giấu file chứa URL thật của bạn)
 assets/js/config.js
+
+# Docker (KHÔNG giấu Dockerfile và compose, chỉ giấu dữ liệu phát sinh nếu có)
+# docker-data/ 
 
 # OS & IDE
 .DS_Store
@@ -7,10 +10,10 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Build outputs
+# Build outputs & Logs
 assets/css/main.css.map
 *.log
 
-# Node (nếu sau này có)
+# Environment & Dependencies
 node_modules/
 .env

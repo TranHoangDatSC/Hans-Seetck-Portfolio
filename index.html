@@ -10,14 +10,17 @@
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     
     <link rel="stylesheet" href="./assets/css/main.css">
-    
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./tailwind.config.js"></script> 
+    <script src="./tailwind.config.js"></script>
     <script src="./assets/js/config.js"></script>
+    <script>
+      if (typeof _sys_config === 'undefined') {
+          window._sys_config = { api_endpoint: "" };
+      }
+    </script>
     <script src="./assets/js/main.js" defer></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-
 <body class="bg-dark text-slate-300 font-sans antialiased selection:bg-primary/30" x-data="{ scrolled: false }" @scroll.window="scrolled = (window.pageYOffset > 20)">
 
     <nav class="fixed w-full z-50 transition-all duration-300 border-b border-transparent" :class="scrolled ? 'bg-slate-950/80 backdrop-blur-xl py-3 border-b border-white/5 shadow-2xl' : 'py-6'">

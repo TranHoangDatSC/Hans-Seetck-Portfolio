@@ -42,6 +42,15 @@ Hệ thống hóa năng lực dựa trên nền tảng Kỹ thuật phần mềm
 - **Học máy:** Triển khai Isolation Forest, Random Forest, XGBoost cho các bài toán phát hiện gian lận (Fraud Detection).
 - **Kỹ thuật:** Feature Engineering, xử lý dữ liệu mất cân bằng (Imbalanced Data), Visual Analytics.
 
+## 3 🐳 Quick Start (Local Deployment)
+Dự án được container hóa bằng Docker giúp triển khai nhanh chóng mà không cần cài đặt môi trường.
+
+- **Chuẩn bị cấu hình:**
+Tạo file `assets/js/config.js` dựa trên template sau:
+```javascript
+const _sys_config = {
+    api_endpoint: "YOUR_GOOGLE_APPS_SCRIPT_URL"
+
 ---
 
 ## 🔬 Dự án tiêu biểu & Nghiên cứu (Key Projects)
@@ -80,4 +89,29 @@ Hệ thống hóa năng lực dựa trên nền tảng Kỹ thuật phần mềm
 - **GitHub:** [github.com/TranHoangDatSC](https://github.com/TranHoangDatSC)
 
 ---
+
+---
+
+## 🏗️ Kiến trúc dự án (System Architecture)
+Dự án Portfolio này được thiết kế theo tư duy tách biệt môi trường (Environment Separation) để đảm bảo tính bảo mật và dễ dàng triển khai:
+
+* **Frontend:** HTML5, Tailwind CSS, Alpine.js (Lightweight Reactivity).
+* **Backend:** Google Apps Script (Serverless) xử lý logic nghiệp vụ và lưu trữ dữ liệu tập trung.
+* **DevOps:** * **Docker:** Đóng gói môi trường Web Server Nginx đồng nhất.
+    * **Docker Compose:** Orchestration luồng dữ liệu và bảo mật cấu hình nhạy cảm thông qua **Volume Mounting**.
+    * **Security:** Chặn rò rỉ API Endpoints lên Version Control bằng cách tách biệt file cấu hình qua `.gitignore`.
+
+---
+
+## 🐳 Triển khai nhanh (Quick Start)
+Dự án được container hóa giúp triển khai nhanh chóng trên mọi môi trường mà không cần cài đặt thủ công.
+
+### 1. Chuẩn bị cấu hình
+Tạo file `assets/js/config.js` tại thư mục gốc (file này đã được chặn bởi `.gitignore`) với nội dung:
+```javascript
+const _sys_config = {
+    api_endpoint: "YOUR_GOOGLE_APPS_SCRIPT_URL"
+};
+---
+
 **Copyright © 2026 Tran Hoang Dat.**

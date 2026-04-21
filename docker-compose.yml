@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  portfolio-site:
+    build: .
+    container_name: dat-portfolio-final
+    ports:
+      - "8080:80"
+    volumes:
+      - ./assets/js/config.js:/usr/share/nginx/html/assets/js/config.js
+    restart: always
