@@ -1,0 +1,28 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "layout/navbar";
+@import "layout/hero";
+@import "layout/roadmap";
+@import "components/cards";
+@import "components/buttons";
+
+body {
+    background-color: $color-bg;
+    color: $color-text-main;
+    font-family: $font-main;
+    overflow-x: hidden;
+}
+
+.glass { 
+    background: rgba(15, 23, 42, 0.6); 
+    backdrop-filter: blur(12px); 
+    border: 1px solid rgba(255, 255, 255, 0.05); 
+}
+
+[x-cloak] { display: none !important; }
+
+.tech-tag { 
+    @apply text-[10px] font-mono bg-dark px-2 py-1 rounded border border-slate-800 hover:border-primary/50 transition-colors; 
+}
+
+.text-award { color: $color-award; }

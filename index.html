@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Hoang Dat Tran | Software Developer</title>
+    
+    <link rel="icon" type="image/png" href="./assets/img/logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="./assets/css/main.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script> 
+    <script src="./assets/js/config.js"></script>
+    <script src="./assets/js/main.js" defer></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body class="bg-dark text-slate-300 font-sans antialiased selection:bg-primary/30" x-data="{ scrolled: false }" @scroll.window="scrolled = (window.pageYOffset > 20)">
+
+    <nav class="fixed w-full z-50 transition-all duration-300 border-b border-transparent" :class="scrolled ? 'bg-slate-950/80 backdrop-blur-xl py-3 border-b border-white/5 shadow-2xl' : 'py-6'">
+        <div class="container mx-auto flex items-center justify-between px-8">
+            <div class="flex items-center gap-3">
+                <div class="h-10 w-10 flex items-center justify-center">
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                        <rect width="100" height="100" rx="24" fill="#4f46e5" fill-opacity="0.1"/>
+                        
+                        <path d="M35 30V70H50C61.0457 70 70 61.0457 70 50C70 38.9543 61.0457 30 50 30H35Z" 
+                            stroke="#6366f1" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                        
+                        <line x1="35" y1="82" x2="65" y2="82" stroke="#00f2ff" stroke-width="6" stroke-linecap="round">
+                            <animate attributeName="opacity" values="0;1;0" dur="1.5s" repeatCount="indefinite" />
+                        </line>
+                    </svg>
+                </div>
+                <span class="font-mono text-sm tracking-tighter text-white">DAT.DEV</span>
+            </div>
+            <ul class="hidden md:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em]">
+                <li><a href="#education" class="hover:text-primary transition">Education</a></li>
+                <li><a href="#skills" class="hover:text-primary transition">Skills</a></li>
+                <li><a href="#portfolio" class="hover:text-primary transition">Projects</a></li>
+                <li><a href="#contact" class="hover:text-primary transition">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="min-h-[80vh] flex items-center pt-24">
+        <div class="container mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-8 space-y-6">
+                <div class="text-primary font-mono text-xs tracking-widest uppercase inline-block border-b border-primary/30 pb-1">3rd Year IT Student @ HCMUE</div>
+                <h1 class="text-4xl lg:text-6xl font-semibold text-white tracking-tight leading-none">
+                    Tran Hoang Dat
+                </h1>
+                <p class="text-lg text-slate-400 font-mono leading-relaxed max-w-xl italic">
+                    Software Developer | Data Analyst.<br>
+                    Crafting high-performance backends and automated pipelines.
+                </p>
+            </div>
+            <div class="lg:col-span-4 flex justify-center lg:justify-end">
+                <div class="relative w-48 h-48 lg:w-64 lg:h-64">
+                    <div class="absolute inset-0 border border-slate-800 rounded-full scale-110"></div>
+                    <img src="./assets/img/me.jpg" class="w-full h-full rounded-full object-cover grayscale hover:grayscale-0 transition-all border border-slate-700" alt="Profile Photo"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-24 border-y border-subtle bg-slate-950/10">
+        <div class="container mx-auto px-8 text-white">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div class="space-y-8">
+                    <div>
+                        <h2 class="text-[10px] font-bold text-primary tracking-[0.3em] uppercase mb-4">Academic Background</h2>
+                        <h3 class="text-3xl font-medium italic">Computer Science Education</h3>
+                        <p class="text-slate-500 font-mono text-sm mt-2">Class of 2023 — 2027</p>
+                    </div>
+                    <div class="glass p-6 rounded-2xl border-l-4 border-primary">
+                        <p class="text-xs text-slate-500 uppercase tracking-widest mb-2 font-bold">Current Status</p>
+                        <p class="font-medium text-lg text-white">Junior (Year 3)</p>
+                        <p class="text-sm text-slate-400">Ho Chi Minh City University of Education (HCMUE)</p>
+                    </div>
+                </div>
+                <div class="space-y-8">
+                    <div>
+                        <h2 class="text-[10px] font-bold text-accent tracking-[0.3em] uppercase mb-4">Focus & Vision</h2>
+                        <h3 class="text-3xl font-medium italic">Professional Specialization</h3>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-5 bg-slate-900/40 border border-subtle rounded-xl">
+                            <p class="text-[18px] font-bold text-white mb-3 uppercase tracking-tighter">Core Competencies</p>
+                            <ul class="text-xs text-slate-400 space-y-2 italic">
+                                <li>• Fullstack Development</li>
+                                <li>• Backend Architecture</li>
+                                <li>• Google Workspace Automation</li>
+                            </ul>
+                        </div>
+                        <div class="p-5 bg-slate-900/40 border border-subtle rounded-xl">
+                            <p class="text-[18px] font-bold text-white mb-3 uppercase tracking-tighter">Career Roadmap</p>
+                            <ul class="text-xs text-slate-400 space-y-2 italic">
+                                <li>• Data Analyst</li>
+                                <li>• Machine Learning</li>
+                                <li>• DevOps Engineering</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 bg-dark">
+        <div class="container mx-auto px-8">
+            <h2 class="text-[10px] font-bold text-slate-500 tracking-[0.3em] uppercase mb-16 text-center italic">Technology Stack & Tools</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto italic">
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3 px-2">
+                        <i class="bx bx-analyse text-primary text-2xl"></i>
+                        <h4 class="text-xs font-bold text-white uppercase tracking-widest">Data & Machine Learning</h4>
+                    </div>
+                    <div class="bg-slate-900/30 border border-subtle p-6 rounded-3xl flex flex-wrap gap-2">
+                        <span class="tech-tag text-orange-400">Scikit-learn</span>
+                        <span class="tech-tag text-blue-500">Pandas</span>
+                        <span class="tech-tag text-orange-500">TensorFlow</span>
+                        <span class="tech-tag text-red-500">PyTorch</span>
+                        <span class="tech-tag text-green-500">OpenCV</span>
+                        <span class="tech-tag text-red-600">Keras</span>
+                        <span class="tech-tag text-blue-300">NLTK</span>
+                        <span class="tech-tag text-blue-600">SpaCy</span>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3 px-2">
+                        <i class="bx bx-code-alt text-blue-400 text-2xl"></i>
+                        <h4 class="text-xs font-bold text-white uppercase tracking-widest">Web Development</h4>
+                    </div>
+                    <div class="bg-slate-900/30 border border-subtle p-6 rounded-3xl flex flex-wrap gap-2">
+                        <span class="tech-tag text-emerald-400 font-bold border-emerald-400/30">FastAPI</span>
+                        <span class="tech-tag text-white">Next.js</span>
+                        <span class="tech-tag text-green-500">Node.js</span>
+                        <span class="tech-tag text-sky-400">Tailwind CSS</span>
+                        <span class="tech-tag text-cyan-400">React</span>
+                        <span class="tech-tag text-purple-500 font-bold">ASP.NET Core</span>
+                        <span class="tech-tag text-red-500">Angular</span>
+                        <span class="tech-tag text-red-400">Laravel</span>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3 px-2">
+                        <i class="bx bx-data text-amber-400 text-2xl"></i>
+                        <h4 class="text-xs font-bold text-white uppercase tracking-widest">Database System</h4>
+                    </div>
+                    <div class="bg-slate-900/30 border border-subtle p-6 rounded-3xl flex flex-wrap gap-2">
+                        <span class="tech-tag text-sky-500 font-bold">PostgreSQL</span>
+                        <span class="tech-tag text-red-500">SQL Server</span>
+                        <span class="tech-tag text-orange-400 font-bold">MySQL</span>
+                        <span class="tech-tag text-emerald-400 font-bold border-emerald-400/30">MongoDB</span>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3 px-2">
+                        <i class="bx bx-server text-cyan-400 text-2xl"></i>
+                        <h4 class="text-xs font-bold text-white uppercase tracking-widest">DevOps & Infrastructure</h4>
+                    </div>
+                    <div class="bg-slate-900/30 border border-subtle p-6 rounded-3xl flex flex-wrap gap-2">
+                        <span class="tech-tag text-blue-400 font-bold">Docker</span>
+                        <span class="tech-tag text-emerald-500">Nginx</span>
+                        <span class="tech-tag text-red-400">Jenkins</span>
+                        <span class="tech-tag text-red-600">Ansible</span>
+                        <span class="tech-tag text-orange-500">Linux (Ubuntu)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-24">
+        <div class="container mx-auto px-8">
+            <div class="mb-16">
+                <h2 class="text-[10px] font-bold text-primary tracking-[0.3em] uppercase mb-4">Engineering</h2>
+                <h3 class="text-4xl text-white font-light tracking-tight italic">Key Projects</h3>
+            </div>
+
+            <div class="flex flex-wrap gap-4 justify-center">
+                <div class="bg-slate-900/30 p-10 flex-grow basis-full lg:basis-[48%] border border-subtle rounded-3xl hover:border-primary/30 transition-all group">
+                    <div class="flex justify-between items-center mb-10">
+                        <span class="text-[9px] font-bold text-emerald-500 uppercase tracking-widest border border-emerald-500/20 px-3 py-1 rounded">Completed</span>
+                        <i class="bx bx-store text-2xl text-blue-500/100 group-hover:text-primary transition"></i>
+                    </div>
+                    <h4 class="text-2xl text-white mb-4 italic font-medium">OldShop E-Commerce</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-8 italic">Second-hand e-commerce system with a FastAPI backend, featuring product lifecycle optimization.</p>
+                    <div class="flex gap-4 font-mono text-[10px] text-slate-500"><span>#Python</span><span>#PostgreSQL</span><span>#RestAPI</span></div>
+                </div>
+
+                <div class="bg-slate-900/30 p-10 flex-grow basis-full lg:basis-[48%] border border-subtle rounded-3xl hover:border-primary/30 transition-all group">
+                    <div class="flex justify-between items-center mb-10">
+                        <span class="text-[9px] font-bold text-amber-500 uppercase tracking-widest border border-amber-500/20 px-3 py-1 rounded">Alpha Stage</span>
+                        <i class="bx bxl-youtube text-2xl text-red-500/100 group-hover:text-red-500 transition"></i>
+                    </div>
+                    <h4 class="text-2xl text-white mb-4 italic font-medium">Auto-Upload Pipeline</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-8 italic">Mass video processing and automated publishing pipeline using YouTube Data API v3.</p>
+                    <div class="flex gap-4 font-mono text-[10px] text-slate-500"><span>#Automation</span><span>#YouTubeAPI</span><span>#Python</span></div>
+                </div>
+                <div class="bg-slate-900/30 p-10 flex-grow basis-full lg:basis-[48%] border border-subtle rounded-3xl hover:border-primary/30 transition-all group">
+                    <div class="flex justify-between items-center mb-10">
+                        <span class="text-[9px] font-bold text-emerald-500 uppercase tracking-widest border border-emerald-500/20 px-3 py-1 rounded">Commercial</span>
+                        <i class="bx bx-receipt text-2xl text-emerald-500/100 group-hover:text-accent transition"></i>
+                    </div>
+                    <h4 class="text-2xl text-white mb-4 italic font-medium">Ca phe khong CN POS 1</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-8 italic">Custom inventory and sales management solution for F&B businesses, leveraging Google Workspace ecosystem.</p>
+                    <div class="flex gap-4 font-mono text-[10px] text-slate-500"><span>#AppsScript</span><span>#SalesOps</span><span>#Cloud</span></div>
+                </div>
+
+                <div class="bg-slate-900/30 p-10 flex-grow basis-full lg:basis-[48%] border border-subtle rounded-3xl hover:border-primary/30 transition-all group">
+                    <div class="flex justify-between items-center mb-10">
+                        <span class="text-[9px] font-bold text-amber-500 uppercase tracking-widest border border-amber-500/20 px-3 py-1 rounded">Alpha Stage</span>
+                        <i class="bx bx-brain text-2xl text-purple-500/100 group-hover:text-accent transition"></i>
+                    </div>
+                    <h4 class="text-2xl text-white mb-4 italic font-medium">E-Wallet Anomaly Detection</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-8 italic">Developing ML models to detect anomalies transactions with high precision and low latency for Fintech security.</p>
+                    <div class="flex gap-4 font-mono text-[10px] text-slate-500"><span>#MachineLearning</span><span>#ScikitLearn</span><span>#DataScience</span></div>
+                </div>
+            </div>
+
+            <div class="mt-20 glass p-10 lg:p-16 rounded-[40px] border border-primary/20 relative overflow-hidden group">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+                    <div class="lg:col-span-6 space-y-8">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 border border-primary/20 rounded-full">
+                            <span class="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
+                            <span class="text-[9px] font-bold text-primary uppercase tracking-widest">Scientific Publication</span>
+                        </div>
+                        <h4 class="text-2xl lg:text-3xl text-white font-bold italic tracking-tight lg:whitespace-nowrap">
+                            Quick Notification System
+                        </h4>
+                        <p class="text-slate-400 leading-relaxed text-base italic">Multi-platform notification automation (Discord, Telegram, Slack). Academically published and professionally recognized.</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                            <div class="flex flex-col gap-1">
+                                <span class="text-[10px] font-mono text-slate-500 uppercase tracking-widest">Research Paper (DOI)</span>
+                                <a href="https://doi.org/10.34238/tnu-jst.12430" target="_blank" class="text-xs font-mono text-primary hover:underline italic truncate">10.34238/tnu-jst.12430</a>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <span class="text-[10px] font-mono text-slate-500 uppercase tracking-widest">Competition Status</span>
+                                <span class="text-xs font-mono text-white italic">Euréka 2025 Semi-finalist</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-6 relative" x-data="{ open: false }">
+                        <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl group/img cursor-zoom-in" @click="open = true">
+                            <img src="./assets/img/eureka-cert.jpg" class="w-full h-auto object-cover transition-transform duration-1000 group-hover/img:scale-110" alt="Euréka Certificate">
+                            
+                            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                                <i class="bx bx-search-alt text-white text-4xl"></i>
+                            </div>
+
+                            <div class="absolute inset-0 bg-gradient-to-t from-dark/90 via-transparent to-transparent flex items-end p-8">
+                                <p class="text-[10px] font-bold text-white/70 uppercase tracking-[0.2em] italic">Click to view full certificate</p>
+                            </div>
+                        </div>
+
+                        <div class="absolute -top-6 -right-2 bg-white text-dark p-4 rounded-xl shadow-[0_20px_50px_rgba(79,70,229,0.3)] -rotate-6 flex flex-col items-center border border-primary/20 pointer-events-none">
+                            <span class="text-2xl font-black italic leading-none text-red-600">3rd PRIZE</span>
+                            <span class="text-[8px] uppercase font-bold tracking-tighter mt-1 text-slate-600">FIT - HCMUE Research 24-25</span>
+                        </div>
+
+                        <template x-teleport="body">
+                            <div x-show="open" 
+                                x-transition:enter="transition ease-out duration-300"
+                                x-transition:enter-start="opacity-0"
+                                x-transition:enter-end="opacity-100"
+                                x-transition:leave="transition ease-in duration-200"
+                                x-transition:leave-start="opacity-100"
+                                x-transition:leave-end="opacity-0"
+                                class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-dark/90 backdrop-blur-sm"
+                                @click="open = false"
+                                @keydown.escape.window="open = false"
+                                x-cloak>
+                                
+                                <button class="absolute top-6 right-6 text-white text-4xl hover:text-primary transition">&times;</button>
+
+                                <img src="./assets/img/eureka-cert.jpg" 
+                                    class="max-w-full max-h-[90vh] rounded-lg shadow-2xl border border-white/10"
+                                    @click.stop>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact" class="mt-20 grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <div class="lg:col-span-4 glass p-10 rounded-[40px] border border-white/5 flex flex-col justify-between">
+                    <div class="space-y-6">
+                        <h4 class="text-2xl text-white font-medium italic">Get in Touch</h4>
+                        <p class="text-sm text-slate-400 italic">Open for collaborations in Software Development or Data Analysis.</p>
+                    </div>
+                    <div class="space-y-4 mt-12">
+                        <a href="tel:0843001753" class="flex items-center gap-4 group">
+                            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20 group-hover:bg-primary transition-all">
+                                <i class="bx bx-phone text-primary group-hover:text-white"></i>
+                            </div>
+                            <span class="text-sm font-mono text-slate-300 group-hover:text-white transition">084 300 1753</span>
+                        </a>
+                        <a href="mailto:hoangdattran12@gmail.com" class="flex items-center gap-4 group">
+                            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20 group-hover:bg-primary transition-all">
+                                <i class="bx bx-envelope text-primary group-hover:text-white"></i>
+                            </div>
+                            <span class="text-sm font-mono text-slate-300 group-hover:text-white transition">hoangdattran12@gmail.com</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-8 glass p-10 lg:p-12 rounded-[40px] border border-white/5" x-data="contactForm()">
+                    <form @submit.prevent="submitForm" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <input type="text" 
+                            name="name" 
+                            x-model="formData.name" 
+                            placeholder="Name" 
+                            autocomplete="name" 
+                            required 
+                            class="bg-slate-950/50 border border-slate-800 rounded-2xl px-6 py-4 text-sm focus:outline-none focus:border-primary/50">
+
+                        <input type="email" 
+                            name="email" 
+                            x-model="formData.email" 
+                            placeholder="Email" 
+                            autocomplete="email" 
+                            required 
+                            class="bg-slate-950/50 border border-slate-800 rounded-2xl px-6 py-4 text-sm focus:outline-none focus:border-primary/50">
+
+                        <textarea name="message" 
+                                x-model="formData.message" 
+                                rows="4" 
+                                placeholder="Message" 
+                                autocomplete="off" 
+                                required 
+                                class="md:col-span-2 bg-slate-950/50 border border-slate-800 rounded-2xl px-6 py-4 text-sm focus:outline-none focus:border-primary/50 resize-none"></textarea>
+
+                        <div class="md:col-span-2 flex justify-center mt-4">
+                            <button type="submit" :disabled="loading" class="btn-submit">
+                                <template x-if="loading">
+                                    <i class="bx bx-loader-alt animate-spin text-lg"></i>
+                                </template>
+                                <span x-text="loading ? 'Sending...' : 'Send Message'"></span>
+                                <template x-if="!loading">
+                                    <i class="bx bx-paper-plane"></i>
+                                </template>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pt-24 pb-12 bg-[#010409] border-t border-white/5 relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent"></div>
+
+        <div class="container mx-auto px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
+                <div class="md:col-span-5 space-y-6">
+                    <div class="flex items-center gap-3">
+                        <div class="h-10 w-10">
+                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full opacity-90">
+                                <rect width="100" height="100" rx="24" fill="#4f46e5" fill-opacity="0.1"/>
+                                <path d="M35 30V70H50C61.0457 70 70 61.0457 70 50C70 38.9543 61.0457 30 50 30H35Z" stroke="#6366f1" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                                <line x1="35" y1="82" x2="65" y2="82" stroke="#00f2ff" stroke-width="6" stroke-linecap="round">
+                                    <animate attributeName="opacity" values="0;1;0" dur="1.5s" repeatCount="indefinite" />
+                                </line>
+                            </svg>
+                        </div>
+                        <span class="font-mono text-lg tracking-tighter text-white font-bold">DAT.DEV</span>
+                    </div>
+                    <p class="text-slate-500 italic text-sm max-w-xs leading-relaxed">
+                        Stability by design. Scalability by execution. Specialized in automation and resilient system architectures.
+                    </p>
+                </div>
+
+                <div class="md:col-span-3 space-y-6">
+                    <h4 class="text-white text-xs font-bold uppercase tracking-widest">Navigation</h4>
+                    <ul class="space-y-4 text-slate-500 text-xs font-mono uppercase tracking-wider">
+                        <li><a href="#education" class="hover:text-primary transition">Education</a></li>
+                        <li><a href="#skills" class="hover:text-primary transition">Skills</a></li>
+                        <li><a href="#portfolio" class="hover:text-primary transition">Projects</a></li>
+                        <li><a href="#contact" class="hover:text-primary transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="md:col-span-4 space-y-6">
+                    <h4 class="text-white text-xs font-bold uppercase tracking-widest">Connect</h4>
+                    <div class="flex flex-col gap-4">
+                        <a href="tel:0843001753" class="flex items-center gap-3 text-slate-400 hover:text-white transition group">
+                            <i class="bx bx-phone text-xl text-primary/60 group-hover:text-primary"></i>
+                            <span class="text-sm font-mono">084 300 1753</span>
+                        </a>
+                        <a href="mailto:hoangdattran12@gmail.com" class="flex items-center gap-3 text-slate-400 hover:text-white transition group">
+                            <i class="bx bx-envelope text-xl text-primary/60 group-hover:text-primary"></i>
+                            <span class="text-sm font-mono">hoangdattran12@gmail.com</span>
+                        </a>
+                        <div class="flex gap-5 pt-2">
+                            <a href="https://github.com/TranHoangDatSC" target="_blank" class="w-10 h-10 rounded-xl bg-slate-900 border border-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:border-primary/50 transition-all">
+                                <i class="bx bxl-github text-xl"></i>
+                            </a>
+                            <a href="https://www.facebook.com/tran.hoang.at.435677" target="_blank" class="w-10 h-10 rounded-xl bg-slate-900 border border-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:border-primary/50 transition-all">
+                                <i class="bx bxl-facebook text-xl"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/tr%E1%BA%A7n-%C4%91%E1%BA%A1t-6b4a0a297/" target="_blank" class="w-10 h-10 rounded-xl bg-slate-900 border border-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:border-primary/50 transition-all">
+                                <i class="bx bxl-linkedin text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-[10px] text-slate-600 font-mono uppercase tracking-[0.2em]">
+                    &copy; 2026 Hoang Dat Tran. All rights reserved.
+                </p>
+                <div class="px-3 py-1 bg-dark border border-white/5 rounded-full">
+                    <span class="text-[9px] font-mono text-primary animate-pulse">●</span>
+                    <span class="text-[9px] font-mono text-slate-500 uppercase tracking-widest ml-1">v2.0.6-stable</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button 
+        x-data="{ show: false }" 
+        @scroll.window="show = (window.pageYOffset > 500)"
+        x-show="show" 
+        x-transition.opacity
+        @click="window.scrollTo({top: 0, behavior: 'smooth'})"
+        class="fixed bottom-8 right-8 z-[60] w-12 h-12 bg-primary hover:bg-accent text-white rounded-full shadow-2xl flex items-center justify-center transition-all hover:-translate-y-1 active:scale-90"
+        x-cloak>
+        <i class="bx bx-chevron-up text-2xl"></i>
+    </button>
+</body>
+</html>

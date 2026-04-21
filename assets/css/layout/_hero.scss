@@ -1,0 +1,31 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  @include flex-center;
+  background: radial-gradient(circle at 50% 50%, #1e1b4b 0%, $color-bg 100%);
+
+  &__content {
+    h1 {
+      font-size: clamp(2.5rem, 8vw, 4.5rem);
+      font-weight: 800;
+      line-height: 1.1;
+      
+      .text-gradient {
+        background: linear-gradient(to right, $color-secondary, #c084fc);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+
+  &__badge {
+    padding: 0.5rem 1rem;
+    background: rgba($color-primary, 0.2);
+    border: 1px solid rgba($color-primary, 0.3);
+    border-radius: 99px;
+    color: $color-secondary;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,212 @@
+nav.bg-slate-950\/80 {
+  @apply backdrop-blur-xl py-3 border-b border-white/5 shadow-2xl;
+}
+nav ul li a {
+  @apply hover:text-primary transition-colors duration-300;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  @apply absolute -bottom-1 left-0 w-0 h-px bg-primary transition-all duration-300;
+}
+nav ul li a:hover::after {
+  @apply w-full;
+}
+
+.font-mono.text-sm {
+  @apply tracking-tighter text-white;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 50% 50%, #1e1b4b 0%, #020617 100%);
+}
+.hero__content h1 {
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+}
+.hero__content h1 .text-gradient {
+  background: linear-gradient(to right, #818cf8, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero__badge {
+  padding: 0.5rem 1rem;
+  background: rgba(67, 56, 202, 0.2);
+  border: 1px solid rgba(67, 56, 202, 0.3);
+  border-radius: 99px;
+  color: #818cf8;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.roadmap {
+  border-left: 2px solid #0f172a;
+  padding-left: 2rem;
+  position: relative;
+  margin-left: 1rem;
+}
+.roadmap__item {
+  margin-bottom: 4rem;
+  position: relative;
+}
+.roadmap__item::before {
+  content: "";
+  position: absolute;
+  left: calc(-2rem - 9px);
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #4338ca;
+  box-shadow: 0 0 15px rgba(67, 56, 202, 0.5);
+}
+.roadmap__item .year {
+  color: #818cf8;
+  font-weight: 700;
+  font-family: "JetBrains Mono", monospace;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 2rem;
+}
+.project-card .project-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+.project-card .project-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(67, 56, 202, 0.5);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+.project-card .project-card:hover img {
+  transform: scale(1.1);
+}
+.project-card .project-card__image {
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+}
+.project-card .project-card__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.6;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-card .project-card__image .badge-score {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #4338ca;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+.project-card .project-card__info {
+  padding: 2rem;
+}
+.project-card .project-card__info h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+.project-card .project-card__info .tags {
+  display: flex;
+  gap: 0.5rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+.tech-tag {
+  @apply text-[10px] font-mono bg-dark px-2 py-1 rounded border border-slate-800 hover:border-primary/50 transition-colors;
+}
+
+.btn-submit {
+  display: flex !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 90%;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  background-color: #4338ca;
+  color: #ffffff !important;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(67, 56, 202, 0.3);
+}
+.btn-submit:hover {
+  background-color: rgb(105.0476190476, 96.2738095238, 212.7261904762);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(67, 56, 202, 0.4);
+}
+.btn-submit:active {
+  transform: translateY(0);
+}
+.btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  filter: grayscale(0.5);
+  transform: none !important;
+}
+@media (min-width: 768px) {
+  .btn-submit {
+    grid-column: span 2;
+  }
+}
+
+body {
+  background-color: #020617;
+  color: #f1f5f9;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+.glass {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+[x-cloak] {
+  display: none !important;
+}
+
+.tech-tag {
+  @apply text-[10px] font-mono bg-dark px-2 py-1 rounded border border-slate-800 hover:border-primary/50 transition-colors;
+}
+
+.text-award {
+  color: #e11d48;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,31 @@
+.roadmap {
+  border-left: 2px solid $color-surface;
+  padding-left: 2rem;
+  position: relative;
+  margin-left: 1rem;
+
+  &__item {
+    margin-bottom: 4rem;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: calc(-2rem - 9px);
+      top: 5px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: $color-primary;
+      box-shadow: 0 0 15px rgba($color-primary, 0.5);
+    }
+
+    .year {
+      color: $color-secondary;
+      font-weight: 700;
+      font-family: $font-code;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
