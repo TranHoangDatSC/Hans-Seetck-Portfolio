@@ -27,11 +27,12 @@ Chuyên gia Backend với nền tảng Kỹ thuật phần mềm từ **HCMUE**.
 
 ## 🛠 Technical Stack (Khung năng lực kỹ thuật)
 
-### 1. Development & Frameworks
+### 1. Development & Frameworks & Programming
 * **Python:** Chuyên sâu **FastAPI** (Async Programming) cho kiến trúc Microservices.
 * **C#:** Phát triển dịch vụ hệ thống với **ASP.NET Core**.
 * **JavaScript/TypeScript:** Tối ưu Google Workspace (Apps Script) và Frontend cơ bản (React/Next.js).
 * **PHP:** Quản trị các hệ thống cơ sở dữ liệu truyền thống.
+* **C/C++:** Đạt điểm cao các môn về OOP, DSA.
 
 ### 2. Infrastructure & Cloud
 * **Data:** PostgreSQL (SQLAlchemy), SQL Server, MySQL, MongoDB.
